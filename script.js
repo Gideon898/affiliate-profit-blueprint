@@ -1,11 +1,21 @@
-const faqItems = document.querySelectorAll('.faq-item');
+// Funnel Loaded
+console.log("Affiliate Funnel Loaded Successfully");
 
-faqItems.forEach(item => {
+// Simple animation effect
+document.addEventListener("DOMContentLoaded", () => {
 
-  item.addEventListener('click', () => {
+  const button = document.getElementById("stakecut-button");
 
-    item.classList.toggle('active');
+  if(button){
 
-  });
+    button.addEventListener("mouseenter", () => {
+      button.style.opacity = "0.9";
+    });
+
+    button.addEventListener("mouseleave", () => {
+      button.style.opacity = "1";
+    });
+
+  }
 
 });
